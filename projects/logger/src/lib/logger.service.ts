@@ -13,8 +13,8 @@ export class LoggerService implements ErrorHandler {
 
     const timestamp = new Date().getTime();
     const message = error.message;
-    let stackTrace;
-    let logMessage;
+    let stackTrace: string;
+    let logMessage: string;
 
     if (error instanceof Error) {
       stackTrace = error.stack;
